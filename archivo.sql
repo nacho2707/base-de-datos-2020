@@ -344,6 +344,16 @@ CREATE TABLE `persona` (
 
 LOCK TABLES `persona` WRITE;
 /*!40000 ALTER TABLE `persona` DISABLE KEYS */;
+INSERT INTO persona VALUES (`5962507`,`Ignacio Robles`,`roblesignacio7@gmail.com`,`1999-7-27`,`76583818`,`4074006021770862`);
+INSERT INTO persona VALUES (`6167004`,`André Ayala`,`alayala8@gmail.com`,`1997-5-18`,`77783123`,null);
+INSERT INTO persona VALUES (`5969524`,`Felipe Martinez`,`felipem@hotmail.com`,`1999-2-5`,`66258923`,null);
+INSERT INTO persona VALUES (`6174743`,`Maria Molina`,`mmoliona25@gmail.com`,`2000-8-25`,`76588036`,`4074889064823144`);
+INSERT INTO persona VALUES (`6127572`,`Maria Blanco`,`blancomaria@gmail.com`,`2000-7-7`,`76225987`,`1547965823148888`);
+INSERT INTO persona VALUES (`6162801`,`Laura Paredes`,`lsnparedes7@gmail.com`,`1997-11-13`,`66588896`,null);
+INSERT INTO persona VALUES (`2058098`,`Jorge Gonzales`,`jgonzales@man.edu.com`,`1975-3-30`,`78896555`,`4078798865552121`);
+INSERT INTO persona VALUES (`4025565`,`Jose Morales`,`moralesjosej@man.edu.com`,`1988-6-6`,`69658741`,`3620006895668877`);
+INSERT INTO persona VALUES (`3375658`,`Sandra Machicado`,`sandramach@man.edu.com`,`1982-6-18`,`77966541`,`3636987585002199`);
+INSERT INTO persona VALUES (`3666534`,`Jimena Suxo`,`jimenasuxom@ma.edu.com`,`1980-5-15`,`74522311`,`9600205897865523`);
 /*!40000 ALTER TABLE `persona` ENABLE KEYS */;
 UNLOCK TABLES;
 
