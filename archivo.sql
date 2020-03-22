@@ -282,6 +282,7 @@ CREATE TABLE `materia` (
 
 LOCK TABLES `materia` WRITE;
 /*!40000 ALTER TABLE `materia` DISABLE KEYS */;
+INSERT INTO `materia` VALUES (1,'Base de Datos'),(2,'Estadistica I'),(3,'Pensamiento Sistemico'),(4,'Fotografia I'),(5,'Marketing Digital');
 /*!40000 ALTER TABLE `materia` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -310,6 +311,7 @@ CREATE TABLE `notas` (
 
 LOCK TABLES `notas` WRITE;
 /*!40000 ALTER TABLE `notas` DISABLE KEYS */;
+INSERT INTO `notas` VALUES (1,1,85,56,70),(2,2,65,70,60),(3,3,30,80,70),(4,4,40,70,20),(5,5,90,60,50);
 /*!40000 ALTER TABLE `notas` ENABLE KEYS */;
 UNLOCK TABLES;
 
