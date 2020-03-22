@@ -212,7 +212,7 @@ DROP TABLE IF EXISTS `horario`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `horario` (
-  `id` int NOT NULL,
+  `id` CHAR(1) NOT NULL,
   `horaInicio` time NOT NULL,
   `horarioFinal` time NOT NULL,
   PRIMARY KEY (`id`)
@@ -225,6 +225,11 @@ CREATE TABLE `horario` (
 
 LOCK TABLES `horario` WRITE;
 /*!40000 ALTER TABLE `horario` DISABLE KEYS */;
+INSERT INTO horario VALUES(`A`, `7:45`,`9:45`);
+INSERT INTO horario VALUES(`B`, `9:55`,`11:55`);
+INSERT INTO horario VALUES(`C`, `12:00`,`2:00`);
+INSERT INTO horario VALUES(`D`, `14:05`,`16:05`);
+INSERT INTO horario VALUES(`E`, `16:10`,`18:10`);
 /*!40000 ALTER TABLE `horario` ENABLE KEYS */;
 UNLOCK TABLES;
 
