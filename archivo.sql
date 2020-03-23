@@ -121,11 +121,11 @@ CREATE TABLE `docente` (
 
 LOCK TABLES `docente` WRITE;
 /*!40000 ALTER TABLE `docente` DISABLE KEYS */;
-INSERT INTO horario VALUES('123', '5969524','35000','4');
-INSERT INTO horario VALUES('456', '6127572','45000','5');
-INSERT INTO horario VALUES('789', '6162801','55000','5');
-INSERT INTO horario VALUES('987', '6167004','35000','4');
-INSERT INTO horario VALUES('654', '6174743','50000','5');
+INSERT INTO docente VALUES('123', '5969524','35000','4');
+INSERT INTO docente VALUES('456', '6127572','45000','5');
+INSERT INTO docente VALUES('789', '6162801','55000','5');
+INSERT INTO docente VALUES('987', '6167004','35000','4');
+INSERT INTO docente VALUES('654', '6174743','50000','5');
 
 /*!40000 ALTER TABLE `docente` ENABLE KEYS */;
 UNLOCK TABLES;
@@ -154,11 +154,11 @@ CREATE TABLE `estudiante` (
 --
 LOCK TABLES `estudiante` WRITE;
 /*!40000 ALTER TABLE `estudiante` DISABLE KEYS */;
-INSERT INTO horario VALUES('4567', '2058098','2');
-INSERT INTO horario VALUES('8765', '3375658','1');
-INSERT INTO horario VALUES('8907', '3666534','1');
-INSERT INTO horario VALUES('5674', '4025565','1');
-INSERT INTO horario VALUES('3456', '5962507','3');
+INSERT INTO estudiante VALUES('4567', '2058098','2');
+INSERT INTO estudiante VALUES('8765', '3375658','1');
+INSERT INTO estudiante VALUES('8907', '3666534','1');
+INSERT INTO estudiante VALUES('5674', '4025565','1');
+INSERT INTO estudiante VALUES('3456', '5962507','3');
 /*!40000 ALTER TABLE `estudiante` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -211,11 +211,11 @@ CREATE TABLE `grado` (
 
 LOCK TABLES `grado` WRITE;
 /*!40000 ALTER TABLE `grado` DISABLE KEYS */;
-INSERT INTO horario VALUES('1', 'Bachillerato');
-INSERT INTO horario VALUES('2', 'Tecnico');
-INSERT INTO horario VALUES('3', 'Licenciatura');
-INSERT INTO horario VALUES('4', 'Maestria');
-INSERT INTO horario VALUES('5', 'Doctorado');
+INSERT INTO grado VALUES('1', 'Bachillerato');
+INSERT INTO grado VALUES('2', 'Tecnico');
+INSERT INTO grado VALUES('3', 'Licenciatura');
+INSERT INTO grado VALUES('4', 'Maestria');
+INSERT INTO grado VALUES('5', 'Doctorado');
 
 /*!40000 ALTER TABLE `grado` ENABLE KEYS */;
 UNLOCK TABLES;
