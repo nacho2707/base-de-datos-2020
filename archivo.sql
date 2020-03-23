@@ -121,6 +121,12 @@ CREATE TABLE `docente` (
 
 LOCK TABLES `docente` WRITE;
 /*!40000 ALTER TABLE `docente` DISABLE KEYS */;
+INSERT INTO horario VALUES('123', '5969524','35000','4');
+INSERT INTO horario VALUES('456', '6127572','45000','5');
+INSERT INTO horario VALUES('789', '6162801','55000','5');
+INSERT INTO horario VALUES('987', '6167004','35000','4');
+INSERT INTO horario VALUES('654', '6174743','50000','5');
+
 /*!40000 ALTER TABLE `docente` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -146,9 +152,13 @@ CREATE TABLE `estudiante` (
 --
 -- Dumping data for table `estudiante`
 --
-
 LOCK TABLES `estudiante` WRITE;
 /*!40000 ALTER TABLE `estudiante` DISABLE KEYS */;
+INSERT INTO horario VALUES('4567', '2058098','2');
+INSERT INTO horario VALUES('8765', '3375658','1');
+INSERT INTO horario VALUES('8907', '3666534','1');
+INSERT INTO horario VALUES('5674', '4025565','1');
+INSERT INTO horario VALUES('3456', '5962507','3');
 /*!40000 ALTER TABLE `estudiante` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -201,6 +211,12 @@ CREATE TABLE `grado` (
 
 LOCK TABLES `grado` WRITE;
 /*!40000 ALTER TABLE `grado` DISABLE KEYS */;
+INSERT INTO horario VALUES('1', 'Bachillerato');
+INSERT INTO horario VALUES('2', 'Tecnico');
+INSERT INTO horario VALUES('3', 'Licenciatura');
+INSERT INTO horario VALUES('4', 'Maestria');
+INSERT INTO horario VALUES('5', 'Doctorado');
+
 /*!40000 ALTER TABLE `grado` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -225,11 +241,11 @@ CREATE TABLE `horario` (
 
 LOCK TABLES `horario` WRITE;
 /*!40000 ALTER TABLE `horario` DISABLE KEYS */;
-INSERT INTO horario VALUES(`A`, `7:45`,`9:45`);
-INSERT INTO horario VALUES(`B`, `9:55`,`11:55`);
-INSERT INTO horario VALUES(`C`, `12:00`,`2:00`);
-INSERT INTO horario VALUES(`D`, `14:05`,`16:05`);
-INSERT INTO horario VALUES(`E`, `16:10`,`18:10`);
+INSERT INTO horario VALUES('A', '7:45','9:45');
+INSERT INTO horario VALUES('B', '9:55','11:55');
+INSERT INTO horario VALUES('C', '12:00','2:00');
+INSERT INTO horario VALUES('D', '14:05','16:05');
+INSERT INTO horario VALUES('E', '16:10','18:10');
 /*!40000 ALTER TABLE `horario` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -243,7 +259,7 @@ DROP TABLE IF EXISTS `infocurso`;
 CREATE TABLE `infocurso` (
   `id` int NOT NULL,
   `idCurso` int NOT NULL,
-  `idHorario` int NOT NULL,
+  `idHorario` varchar(1) NOT NULL,
   `idDocente` int NOT NULL,
   `fechaInicio` date NOT NULL,
   `fechaFinal` date NOT NULL,
@@ -287,7 +303,12 @@ CREATE TABLE `materia` (
 
 LOCK TABLES `materia` WRITE;
 /*!40000 ALTER TABLE `materia` DISABLE KEYS */;
-INSERT INTO `materia` VALUES (1,'Base de Datos'),(2,'Estadistica I'),(3,'Pensamiento Sistemico'),(4,'Fotografia I'),(5,'Marketing Digital');
+INSERT INTO `materia` VALUES
+(1,'Base de Datos'),
+(2,'Estadistica I'),
+(3,'Pensamiento Sistemico'),
+(4,'Fotografia I'),
+(5,'Marketing Digital');
 /*!40000 ALTER TABLE `materia` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -316,7 +337,12 @@ CREATE TABLE `notas` (
 
 LOCK TABLES `notas` WRITE;
 /*!40000 ALTER TABLE `notas` DISABLE KEYS */;
-INSERT INTO `notas` VALUES (1,1,85,56,70),(2,2,65,70,60),(3,3,30,80,70),(4,4,40,70,20),(5,5,90,60,50);
+INSERT INTO `notas` VALUES 
+(1,1,85,56,70),
+(2,2,65,70,60),
+(3,3,30,80,70),
+(4,4,40,70,20),
+(5,5,90,60,50);
 /*!40000 ALTER TABLE `notas` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -344,16 +370,16 @@ CREATE TABLE `persona` (
 
 LOCK TABLES `persona` WRITE;
 /*!40000 ALTER TABLE `persona` DISABLE KEYS */;
-INSERT INTO persona VALUES (`5962507`,`Ignacio Robles`,`roblesignacio7@gmail.com`,`1999-7-27`,`76583818`,`4074006021770862`);
-INSERT INTO persona VALUES (`6167004`,`André Ayala`,`alayala8@gmail.com`,`1997-5-18`,`77783123`,null);
-INSERT INTO persona VALUES (`5969524`,`Felipe Martinez`,`felipem@hotmail.com`,`1999-2-5`,`66258923`,null);
-INSERT INTO persona VALUES (`6174743`,`Maria Molina`,`mmoliona25@gmail.com`,`2000-8-25`,`76588036`,`4074889064823144`);
-INSERT INTO persona VALUES (`6127572`,`Maria Blanco`,`blancomaria@gmail.com`,`2000-7-7`,`76225987`,`1547965823148888`);
-INSERT INTO persona VALUES (`6162801`,`Laura Paredes`,`lsnparedes7@gmail.com`,`1997-11-13`,`66588896`,null);
-INSERT INTO persona VALUES (`2058098`,`Jorge Gonzales`,`jgonzales@man.edu.com`,`1975-3-30`,`78896555`,`4078798865552121`);
-INSERT INTO persona VALUES (`4025565`,`Jose Morales`,`moralesjosej@man.edu.com`,`1988-6-6`,`69658741`,`3620006895668877`);
-INSERT INTO persona VALUES (`3375658`,`Sandra Machicado`,`sandramach@man.edu.com`,`1982-6-18`,`77966541`,`3636987585002199`);
-INSERT INTO persona VALUES (`3666534`,`Jimena Suxo`,`jimenasuxom@ma.edu.com`,`1980-5-15`,`74522311`,`9600205897865523`);
+INSERT INTO persona VALUES ('5962507','Ignacio Robles','roblesignacio7@gmail.com','1999-7-27','76583818','4074006021770862');
+INSERT INTO persona VALUES ('6167004','André Ayala','alayala8@gmail.com','1997-5-18','77783123',null);
+INSERT INTO persona VALUES ('5969524','Felipe Martinez','felipem@hotmail.com','1999-2-5','66258923',null);
+INSERT INTO persona VALUES ('6174743','Maria Molina','mmoliona25@gmail.com','2000-8-25','76588036','4074889064823144');
+INSERT INTO persona VALUES ('6127572','Maria Blanco','blancomaria@gmail.com','2000-7-7','76225987','1547965823148888');
+INSERT INTO persona VALUES ('6162801','Laura Paredes','lsnparedes7@gmail.com','1997-11-13','66588896',null);
+INSERT INTO persona VALUES ('2058098','Jorge Gonzales','jgonzales@man.edu.com','1975-3-30','78896555','4078798865552121');
+INSERT INTO persona VALUES ('4025565','Jose Morales','moralesjosej@man.edu.com','1988-6-6','69658741','3620006895668877');
+INSERT INTO persona VALUES ('3375658','Sandra Machicado','sandramach@man.edu.com','1982-6-18','77966541','3636987585002199');
+INSERT INTO persona VALUES ('3666534','Jimena Suxo','jimenasuxom@ma.edu.com','1980-5-15','74522311','9600205897865523');
 /*!40000 ALTER TABLE `persona` ENABLE KEYS */;
 UNLOCK TABLES;
 
