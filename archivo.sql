@@ -60,6 +60,11 @@ CREATE TABLE `comentario` (
 
 LOCK TABLES `comentario` WRITE;
 /*!40000 ALTER TABLE `comentario` DISABLE KEYS */;
+INSERT INTO `manabu`.`comentario` (`id`, `contenido`, `ci`) VALUES ('1', 'me agrada esta modalidad', '2058098');
+INSERT INTO `manabu`.`comentario` (`id`, `contenido`, `ci`) VALUES ('2', '10 de 10', '3375658');
+INSERT INTO `manabu`.`comentario` (`id`, `contenido`, `ci`) VALUES ('3', 'muy buen servicio', '3666534');
+INSERT INTO `manabu`.`comentario` (`id`, `contenido`, `ci`) VALUES ('4', 'excelente método de enseñanza', '4025565');
+INSERT INTO `manabu`.`comentario` (`id`, `contenido`, `ci`) VALUES ('5', 'es muy bueno  para profesionales sin empleo', '5962507');
 /*!40000 ALTER TABLE `comentario` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -408,6 +413,11 @@ CREATE TABLE `recibo` (
 
 LOCK TABLES `recibo` WRITE;
 /*!40000 ALTER TABLE `recibo` DISABLE KEYS */;
+INSERT INTO `manabu`.`recibo` (`id`, `monto`, `fecha`, `ci`) VALUES ('1', '190', '2019-12-12', '5962507');
+INSERT INTO `manabu`.`recibo` (`id`, `monto`, `fecha`, `ci`) VALUES ('2', '100', '2020-01-01', '2058098');
+INSERT INTO `manabu`.`recibo` (`id`, `monto`, `fecha`, `ci`) VALUES ('3', '60', '2020-02-02', '4025565');
+INSERT INTO `manabu`.`recibo` (`id`, `monto`, `fecha`, `ci`) VALUES ('4', '340', '2020-03-03', '4025565');
+INSERT INTO `manabu`.`recibo` (`id`, `monto`, `fecha`, `ci`) VALUES ('5', '210', '2020-03-04', '3666534');
 /*!40000 ALTER TABLE `recibo` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -437,6 +447,11 @@ CREATE TABLE `respuesta` (
 
 LOCK TABLES `respuesta` WRITE;
 /*!40000 ALTER TABLE `respuesta` DISABLE KEYS */;
+INSERT INTO `manabu`.`respuesta` (`id`, `idComentario`, `contenido`, `ci`) VALUES ('1', '2', 'x2', '5969524');
+INSERT INTO `manabu`.`respuesta` (`id`, `idComentario`, `contenido`, `ci`) VALUES ('2', '3', 'opino lo mismo', '6127572');
+INSERT INTO `manabu`.`respuesta` (`id`, `idComentario`, `contenido`, `ci`) VALUES ('3', '4', '5 estrellas', '6162801');
+INSERT INTO `manabu`.`respuesta` (`id`, `idComentario`, `contenido`, `ci`) VALUES ('4', '5', 'siiii muy buena iniciativa', '6167004');
+INSERT INTO `manabu`.`respuesta` (`id`, `idComentario`, `contenido`, `ci`) VALUES ('5', '1', 'si, la vdd muy accesible', '4025565');
 /*!40000 ALTER TABLE `respuesta` ENABLE KEYS */;
 UNLOCK TABLES;
 
