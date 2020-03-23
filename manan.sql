@@ -73,6 +73,11 @@ CREATE TABLE `comentario` (
 
 LOCK TABLES `comentario` WRITE;
 /*!40000 ALTER TABLE `comentario` DISABLE KEYS */;
+INSERT INTO `manabu`.`comentario` (`id`, `contenido`, `ci`) VALUES ('1', 'me agrada esta modalidad', '2058098');
+INSERT INTO `manabu`.`comentario` (`id`, `contenido`, `ci`) VALUES ('2', '10 de 10', '3375658');
+INSERT INTO `manabu`.`comentario` (`id`, `contenido`, `ci`) VALUES ('3', 'muy buen servicio', '3666534');
+INSERT INTO `manabu`.`comentario` (`id`, `contenido`, `ci`) VALUES ('4', 'excelente método de enseñanza', '4025565');
+INSERT INTO `manabu`.`comentario` (`id`, `contenido`, `ci`) VALUES ('5', 'es muy bueno  para profesionales sin empleo', '5962507');
 /*!40000 ALTER TABLE `comentario` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -139,11 +144,11 @@ CREATE TABLE `docente` (
 
 LOCK TABLES `docente` WRITE;
 /*!40000 ALTER TABLE `docente` DISABLE KEYS */;
-INSERT INTO horario VALUES('123', '5969524','35000','4');
-INSERT INTO horario VALUES('456', '6127572','45000','5');
-INSERT INTO horario VALUES('789', '6162801','55000','5');
-INSERT INTO horario VALUES('987', '6167004','35000','4');
-INSERT INTO horario VALUES('654', '6174743','50000','5');
+INSERT INTO docente VALUES('123', '5969524','35000','4');
+INSERT INTO docente VALUES('456', '6127572','45000','5');
+INSERT INTO docente VALUES('789', '6162801','55000','5');
+INSERT INTO docente VALUES('987', '6167004','35000','4');
+INSERT INTO docente VALUES('654', '6174743','50000','5');
 
 /*!40000 ALTER TABLE `docente` ENABLE KEYS */;
 UNLOCK TABLES;
@@ -172,11 +177,11 @@ CREATE TABLE `estudiante` (
 --
 LOCK TABLES `estudiante` WRITE;
 /*!40000 ALTER TABLE `estudiante` DISABLE KEYS */;
-INSERT INTO horario VALUES('4567', '2058098','2');
-INSERT INTO horario VALUES('8765', '3375658','1');
-INSERT INTO horario VALUES('8907', '3666534','1');
-INSERT INTO horario VALUES('5674', '4025565','1');
-INSERT INTO horario VALUES('3456', '5962507','3');
+INSERT INTO estudiante VALUES('4567', '2058098','2');
+INSERT INTO estudiante VALUES('8765', '3375658','1');
+INSERT INTO estudiante VALUES('8907', '3666534','1');
+INSERT INTO estudiante VALUES('5674', '4025565','1');
+INSERT INTO estudiante VALUES('3456', '5962507','3');
 /*!40000 ALTER TABLE `estudiante` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -229,11 +234,11 @@ CREATE TABLE `grado` (
 
 LOCK TABLES `grado` WRITE;
 /*!40000 ALTER TABLE `grado` DISABLE KEYS */;
-INSERT INTO horario VALUES('1', 'Bachillerato');
-INSERT INTO horario VALUES('2', 'Tecnico');
-INSERT INTO horario VALUES('3', 'Licenciatura');
-INSERT INTO horario VALUES('4', 'Maestria');
-INSERT INTO horario VALUES('5', 'Doctorado');
+INSERT INTO grado VALUES('1', 'Bachillerato');
+INSERT INTO grado VALUES('2', 'Tecnico');
+INSERT INTO grado VALUES('3', 'Licenciatura');
+INSERT INTO grado VALUES('4', 'Maestria');
+INSERT INTO grado VALUES('5', 'Doctorado');
 
 /*!40000 ALTER TABLE `grado` ENABLE KEYS */;
 UNLOCK TABLES;
@@ -426,6 +431,11 @@ CREATE TABLE `recibo` (
 
 LOCK TABLES `recibo` WRITE;
 /*!40000 ALTER TABLE `recibo` DISABLE KEYS */;
+INSERT INTO `manabu`.`recibo` (`id`, `monto`, `fecha`, `ci`) VALUES ('1', '190', '2019-12-12', '5962507');
+INSERT INTO `manabu`.`recibo` (`id`, `monto`, `fecha`, `ci`) VALUES ('2', '100', '2020-01-01', '2058098');
+INSERT INTO `manabu`.`recibo` (`id`, `monto`, `fecha`, `ci`) VALUES ('3', '60', '2020-02-02', '4025565');
+INSERT INTO `manabu`.`recibo` (`id`, `monto`, `fecha`, `ci`) VALUES ('4', '340', '2020-03-03', '4025565');
+INSERT INTO `manabu`.`recibo` (`id`, `monto`, `fecha`, `ci`) VALUES ('5', '210', '2020-03-04', '3666534');
 /*!40000 ALTER TABLE `recibo` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -455,6 +465,11 @@ CREATE TABLE `respuesta` (
 
 LOCK TABLES `respuesta` WRITE;
 /*!40000 ALTER TABLE `respuesta` DISABLE KEYS */;
+INSERT INTO `manabu`.`respuesta` (`id`, `idComentario`, `contenido`, `ci`) VALUES ('1', '2', 'x2', '5969524');
+INSERT INTO `manabu`.`respuesta` (`id`, `idComentario`, `contenido`, `ci`) VALUES ('2', '3', 'opino lo mismo', '6127572');
+INSERT INTO `manabu`.`respuesta` (`id`, `idComentario`, `contenido`, `ci`) VALUES ('3', '4', '5 estrellas', '6162801');
+INSERT INTO `manabu`.`respuesta` (`id`, `idComentario`, `contenido`, `ci`) VALUES ('4', '5', 'siiii muy buena iniciativa', '6167004');
+INSERT INTO `manabu`.`respuesta` (`id`, `idComentario`, `contenido`, `ci`) VALUES ('5', '1', 'si, la vdd muy accesible', '4025565');
 /*!40000 ALTER TABLE `respuesta` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -481,6 +496,22 @@ CREATE TABLE `temas` (
 
 LOCK TABLES `temas` WRITE;
 /*!40000 ALTER TABLE `temas` DISABLE KEYS */;
+INSERT INTO temas VALUES(101,1,'Tipos de Bases de datos');
+INSERT INTO temas VALUES(102,1,'Algebra Relacional');
+INSERT INTO temas VALUES(103,1,'MySQL');
+INSERT INTO temas VALUES(201,2,'Distribucion de Frecuencias y Presentacion Grafica');
+INSERT INTO temas VALUES(202,2,'Medidas de Posicion');
+INSERT INTO temas VALUES(203,2,'Teoria de la Probabilidad');
+INSERT INTO temas VALUES(301,3,'Sistemas');
+INSERT INTO temas VALUES(302,3,'Fundamentacion');
+INSERT INTO temas VALUES(303,3,'Pensamiento Complejo');
+INSERT INTO temas VALUES(401,4,'Historia');
+INSERT INTO temas VALUES(402,4,'Funcionamiento de una Camara');
+INSERT INTO temas VALUES(403,4,'Aplicaciones Cientificas');
+INSERT INTO temas VALUES(501,5,'Historia');
+INSERT INTO temas VALUES(502,5,'Segmentacion de Mercado');
+INSERT INTO temas VALUES(503,5,'Tipos de comunicacion');
+INSERT INTO temas VALUES(504,5,'Tecnicas de Marketing digital');
 /*!40000 ALTER TABLE `temas` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
