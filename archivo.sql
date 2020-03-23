@@ -463,6 +463,22 @@ CREATE TABLE `temas` (
 
 LOCK TABLES `temas` WRITE;
 /*!40000 ALTER TABLE `temas` DISABLE KEYS */;
+INSERT INTO temas VALUES(101,1,'Tipos de Bases de datos')
+INSERT INTO temas VALUES(102,1,'Algebra Relacional')
+INSERT INTO temas VALUES(103,1,'MySQL')
+INSERT INTO temas VALUES(201,2,'Distribucion de Frecuencias y Presentacion Grafica')
+INSERT INTO temas VALUES(202,2,'Medidas de Posicion')
+INSERT INTO temas VALUES(203,2,'Teoria de la Probabilidad')
+INSERT INTO temas VALUES(301,3,'Sistemas')
+INSERT INTO temas VALUES(302,3,'Fundamentacion')
+INSERT INTO temas VALUES(303,3,'Pensamiento Complejo')
+INSERT INTO temas VALUES(401,4,'Historia')
+INSERT INTO temas VALUES(402,4,'Funcionamiento de una Camara')
+INSERT INTO temas VALUES(403,4,'Aplicaciones Cientificas')
+INSERT INTO temas VALUES(501,5,'Historia')
+INSERT INTO temas VALUES(502,5,'Segmentacion de Mercado')
+INSERT INTO temas VALUES(503,5,'Tipos de comunicacion')
+INSERT INTO temas VALUES(504,5,'Tecnicas de Marketing digital')
 /*!40000 ALTER TABLE `temas` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
