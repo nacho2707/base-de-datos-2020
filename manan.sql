@@ -310,7 +310,7 @@ LOCK TABLES `infocurso` WRITE;
 /*!40000 ALTER TABLE `infocurso` DISABLE KEYS */;
 INSERT INTO `manabu`.`infocurso` (`id`, `idCurso`, `idHorario`, `idDocente`, `fechaInicio`, `fechaFinal`, `capacidad`) VALUES ('1', '12', 'A', '123', '2019-10-10', '2019-12-12', '15');
 INSERT INTO `manabu`.`infocurso` (`id`, `idCurso`, `idHorario`, `idDocente`, `fechaInicio`, `fechaFinal`, `capacidad`) VALUES ('2', '12', 'C', '123', '2019-12-10', '2020-06-01', '20');
-INSERT INTO `manabu`.`infocurso` (`id`, `idCurso`, `idHorario`, `idDocente`, `fechaInicio`, `fechaFinal`, `capacidad`) VALUES ('3', '13', 'C', '789', '2019-01-11', '2020-10-01', '25');
+INSERT INTO `manabu`.`infocurso` (`id`, `idCurso`, `idHorario`, `idDocente`, `fechaInicio`, `fechaFinal`, `capacidad`) VALUES ('3', '13', 'C', '123', '2019-01-11', '2020-10-01', '25');
 INSERT INTO `manabu`.`infocurso` (`id`, `idCurso`, `idHorario`, `idDocente`, `fechaInicio`, `fechaFinal`, `capacidad`) VALUES ('4', '11', 'D', '654', '2020-06-02', '2020-06-03', '10');
 INSERT INTO `manabu`.`infocurso` (`id`, `idCurso`, `idHorario`, `idDocente`, `fechaInicio`, `fechaFinal`, `capacidad`) VALUES ('5', '14', 'B', '987', '2020-10-02', '2020-04-04', '8');
 /*!40000 ALTER TABLE `infocurso` ENABLE KEYS */;
