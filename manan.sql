@@ -354,6 +354,7 @@ DROP TABLE IF EXISTS `notas`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `notas` (
   `id` int NOT NULL,
+  `matricula` int NOT NULL,
   `idMateria` int NOT NULL,
   `parcial1` int NOT NULL,
   `parcial2` int NOT NULL,
@@ -371,11 +372,11 @@ CREATE TABLE `notas` (
 LOCK TABLES `notas` WRITE;
 /*!40000 ALTER TABLE `notas` DISABLE KEYS */;
 INSERT INTO `notas` VALUES 
-(1,1,85,56,70),
-(2,2,65,70,60),
-(3,3,30,80,70),
-(4,4,40,70,20),
-(5,5,90,60,50);
+(1,3456,1,85,56,70),
+(2,3456,2,65,70,60),
+(3,5674,3,30,80,70),
+(4,4567,4,40,70,20),
+(5,8765,5,90,60,50);
 /*!40000 ALTER TABLE `notas` ENABLE KEYS */;
 UNLOCK TABLES;
 
